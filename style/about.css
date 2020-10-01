@@ -98,83 +98,40 @@ nav a:hover {
     background: #B60006;
 }
 
-/* text over image section */
+/* Paragraph section */
 
-section:nth-of-type(1) {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
-.image-text {
-    position: absolute;
-}
-.image-text {
+section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 90vw;
+    height: 120vh;
+    padding: 5vw;
 }
-@keyframes stretch {
-    from {letter-spacing: normal;}
-    to {letter-spacing: 2vw;}
-}
-.image-text h2 {
-    animation-name: stretch;
-    animation-direction: reverse;
-    animation-delay: 0.8;
-    animation-timing-function: ease;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    text-transform: uppercase;
+section p {
+    padding: 1vh 1vw;
+    word-spacing: 2.5px;
+    letter-spacing: 1.7px;
     color: white;
-    font-weight: bold;
-    font-size: 10vw;
-}
-.image-text div {
     background: red;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;   
-    width: 17vw;
-    height: 3.5vh;
+    font-size: 1.9vw;
+    width: 80vw;
 }
-.image-text div:hover { 
-    background: #B60006;
+section p:nth-of-type(1) {
+    align-self: flex-end;
 }
-.image-text a {
-    text-transform: lowercase;
-    font-weight: lighter;
-    color: white;
-    font-size: 2.5vw;
-    text-align: center;
-    text-decoration: none;
-    width: 17vw;
-    padding: 1% 0;
+section p:nth-of-type(2) {
+    align-self: flex-start;
 }
-.image-text a:hover {
-    background: #B60006;
+section p:nth-of-type(3) {
+    align-self: flex-end;
 }
-
-/* dealing with bottom images */
-
-section:nth-of-type(2) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 83vw;
-    height: 60vh;
-    margin: 3% 3.5vw 5% 7.2vw;
-    justify-content: space-between; 
-    align-content: space-between;
+section p:nth-of-type(4) {
+    align-self: flex-start;
 }
-@media only screen and (max-height: 955px) {
-    section:nth-of-type(2) {
-        height: 110vh;
-    }
+section p:nth-of-type(5) {
+    align-self: flex-end;
 }
 
 /* footer */

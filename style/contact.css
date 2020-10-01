@@ -98,83 +98,14 @@ nav a:hover {
     background: #B60006;
 }
 
-/* text over image section */
+/* contact links */
 
-section:nth-of-type(1) {
-    position: relative;
-    width: 100%;
+section {
+    width: 100vw;
+    height: 15vh;
     display: flex;
-    justify-content: center;
-    align-content: center;
     align-items: center;
-}
-.image-text {
-    position: absolute;
-}
-.image-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-@keyframes stretch {
-    from {letter-spacing: normal;}
-    to {letter-spacing: 2vw;}
-}
-.image-text h2 {
-    animation-name: stretch;
-    animation-direction: reverse;
-    animation-delay: 0.8;
-    animation-timing-function: ease;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    text-transform: uppercase;
-    color: white;
-    font-weight: bold;
-    font-size: 10vw;
-}
-.image-text div {
-    background: red;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;   
-    width: 17vw;
-    height: 3.5vh;
-}
-.image-text div:hover { 
-    background: #B60006;
-}
-.image-text a {
-    text-transform: lowercase;
-    font-weight: lighter;
-    color: white;
-    font-size: 2.5vw;
-    text-align: center;
-    text-decoration: none;
-    width: 17vw;
-    padding: 1% 0;
-}
-.image-text a:hover {
-    background: #B60006;
-}
-
-/* dealing with bottom images */
-
-section:nth-of-type(2) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 83vw;
-    height: 60vh;
-    margin: 3% 3.5vw 5% 7.2vw;
-    justify-content: space-between; 
-    align-content: space-between;
-}
-@media only screen and (max-height: 955px) {
-    section:nth-of-type(2) {
-        height: 110vh;
-    }
+    justify-content: space-around;
 }
 
 /* footer */
